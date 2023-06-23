@@ -1,0 +1,264 @@
+
+/* 背景色の変数の代入 */
+:root {
+  --bg: #00000055;
+  --head: #FFFFFF99;
+  --link: #09ed4a;
+}
+
+/* フォントの設定 */
+*{
+  font-family: "Murecho", sans-serif;
+  margin: 0;
+  width: auto;
+}
+
+/* 取り消し線の設定 */
+.del{
+  text-decoration: line-through;
+}
+
+/* ダークモードの設定*/
+@media (prefers-color-scheme: dark)  {
+  :root{
+    --bg: #55555599;
+    --head: #00000055;
+    --link: #187a33;
+   }
+}
+/* 本体部分の背景の設定　*/
+body{
+  width: auto;
+  height: auto;
+  background-color: var(--bg);
+  background-size: auto;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.body{
+  margin: 0px;
+  padding: 80px 5px 15px 5px;
+}
+
+/* ヘッダーの背景色の設定 */
+.head{
+  position: relative;
+  width: 100%;
+  height: 40px;
+  margin: 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+/* ヘッダーテキストの設定 */
+.text{
+  margin: 0px;
+  padding: 0px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+header{
+  position: fixed;
+}
+
+/* ヘッダー背景画像の設定 */
+.head img{
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 200%;
+  object-fit: cover;
+  object-position: center;
+  filter: blur(0.5px);
+}
+
+/* 著作権表示の設定*/
+small{
+  color: #000000;
+}
+
+/* ヘッダーの色の設定*/
+h1,li {
+  color: #117a2d;
+  margin: 0px;
+}
+
+/* 見出しのフォントサイズ*/
+h1{
+  font-size:30px;
+}
+
+/* 見出しの初めの文字を大きく*/
+h2::first-letter{
+  font-size:30px;
+  color: #117a2d;
+}
+
+h3::first-letter{
+  font-size:25px;
+  color:#0f0896;
+}
+
+/* 見出しの余白の設定 */
+h2{
+  margin: 15 0 0 0; /* 上 右 下 左 */
+}
+
+p + h2{
+  margin: 0;
+}
+
+/*現在は未使用
+background {
+  margin: 0 0 40px;
+}
+
+body{
+  width: auto;
+  margin: 0 auto;
+  padding: 2px;
+  background-color: (256, 256, 256, 0.5);
+}
+*/
+
+/* フッターの設定 */
+footer{
+  background-color: #99999999;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+/* 要素の高さが足りなくてもフッターを下に押しつける設定*/
+html{
+    min-height: 100vh;
+    position: relative;
+}
+
+
+/* ヘッダーの横並びの設定 */
+.header li {
+  list-style-type: none;
+  width: 20%;
+  float: left;
+}
+
+.title li{
+  list-style-type: none;
+  width: 100vw;
+  float: left;
+}
+
+/*
+input[type='checkbox']{
+  opacity:0;
+  -webkit-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+input[type='checkbox'] + span::before{
+  content: "\f204";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 400;
+  font-size: 15px;
+}
+
+input[type='checkbox']:checked + span::before{
+  content: '\f205';
+  
+}
+*/
+
+/* リンクの色の設定 */
+a{
+  color: var(--link); 
+  transition-timing-function: ease-out;
+  transition: 0.2s;
+}
+
+/* タイトルの色 */
+
+.title{
+  color:#117a2d;
+  text-decoration: none;
+}
+
+/* リンクの後の記号の設定 */
+a[href^="http://"]::after{
+  content:"\f08e";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: var(--link)
+}
+
+a[href^="https://"]::after{
+  content: '';
+  display: inline-block;
+  width: 11px;
+  height: 12px;
+  background-image: url("https://cdn.glitch.global/20c894ca-2dbd-4252-9fb4-b12845da06a0/%E5%A4%96%E9%83%A8%E3%83%AA%E3%83%B3%E3%82%AF.svg?v=1658399969891");
+  background-size: contain;
+  vertical-align: middle;
+}
+
+a[href^="mailto:"]::before{
+ content: '';
+  display: inline-block;
+  width: 15px;
+  height: 10px;
+  background-image: url("https://cdn.glitch.global/20c894ca-2dbd-4252-9fb4-b12845da06a0/%E3%83%A1%E3%83%BC%E3%83%AB.svg?v=1658402954595");
+  background-size: contain;
+  vertical-align: middle; 
+}
+
+/* リンクがホバーされた時 */
+a:hover {
+  color: #117a2d ;
+  font-size: 110%;
+}
+
+/* 小さい文字のクラス */
+.small{
+  font-size:75%
+}
+
+/* 以下,ぱんくずリスト */
+
+.breadcrumb {
+  position: absolute;
+  margin: 80 0 0 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.breadcrumb li {
+  display: inline;
+  list-style: none;
+  font-weight: bold;
+  width:auto;
+}
+
+.breadcrumb li:after {
+  content: '>';
+  padding: 0 0.5em;
+  color: #555555;
+}
+
+.breadcrumb li:last-child:after {
+  content: '';
+}
+
+.breadcrumb li a {
+  text-decoration: none;
+  color: #117a2d;
+}
+
+.breadcrumb li a:hover {
+  text-decoration: underline;
+}
