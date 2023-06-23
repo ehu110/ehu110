@@ -74,7 +74,7 @@ header{
   height: 200%;
   object-fit: cover;
   object-position: center;
-  filter: blur(10px);
+  filter: blur(30px);
 }
 
 /* 著作権表示の設定*/
