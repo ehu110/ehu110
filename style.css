@@ -61,11 +61,13 @@ header{
   background-image: url('./image/77C6CB41-E20C-4952-99AD-53B93C92C808.jpeg');
   object-fit: cover;
   object-position: center;
+  position: fixed;
   margin: 0px;
   padding: 0px;
   width: 100%;
   height: 200%;
   background-blend-mode: screen;
+  z-index: 1;
 }
 
 /* ヘッダー背景画像の設定 */
@@ -75,11 +77,13 @@ header{
     background-image: url('./image/01904ED2-CC11-4EB8-9522-F6249648FFB5.jpeg');
     object-fit: cover;
     object-position: center;
+    position: fixed;
     margin: 0px;
     padding: 0px;
     width: 100%;
     height: 200%;
     background-blend-mode: screen;
+    z-index: 1;
   }
 }
 
@@ -93,6 +97,7 @@ header{
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 2;
 }
 
 
