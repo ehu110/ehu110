@@ -162,8 +162,8 @@ footer{
 
 /* 要素の高さが足りなくてもフッターを下に押しつける設定*/
 html{
-    min-height: 100vh;
-    position: relative;
+  min-height: 100vh;
+  position: relative;
 }
 
 
