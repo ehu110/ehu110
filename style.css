@@ -51,17 +51,6 @@ body{
   padding: 0px 0px 0px 0px;
 }
 
-/* ヘッダーテキストの設定 */
-.text{
-  margin: 0px;
-  padding: 0px;
-  position: fixed;
-  top: 0px;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
 
 header{
   position: fixed;
@@ -92,6 +81,18 @@ header{
     height: 200%;
     background-blend-mode: screen;
   }
+}
+
+/* ヘッダーテキストの設定 */
+.text{
+  margin: 0px;
+  padding: 0px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 
