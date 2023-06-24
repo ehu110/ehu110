@@ -26,6 +26,7 @@
     --link: #187a33;
    }
 }
+
 /* 本体部分の背景の設定　*/
 body{
   width: auto;
@@ -66,16 +67,33 @@ header{
   position: fixed;
 }
 
-/* ヘッダー背景画像の設定 */
 .head img{
+  background-color: #FFFFFF;
+  background-image: url('./image/77C6CB41-E20C-4952-99AD-53B93C92C808.jpeg');
+  object-fit: cover;
+  object-position: center;
   margin: 0px;
   padding: 0px;
   width: 100%;
   height: 200%;
-  object-fit: cover;
-  object-position: center;
-  filter: blur(0.5px);
+  background-blend-mode: screen;
 }
+
+/* ヘッダー背景画像の設定 */
+@media  (prefers-color-scheme: dark)  {
+  .head img{
+    background-color: #FFFFFF;
+    background-image: url('./image/01904ED2-CC11-4EB8-9522-F6249648FFB5.jpeg');
+    object-fit: cover;
+    object-position: center;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 200%;
+    background-blend-mode: screen;
+  }
+}
+
 
 /* 著作権表示の設定*/
 small{
