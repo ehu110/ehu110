@@ -57,8 +57,8 @@ header{
   position: fixed;
 }
 
-/*
-.head img{
+
+.head {
   background-color: #FFFFFF;
   background-image: url('./image/77C6CB41-E20C-4952-99AD-53B93C92C808.jpeg');
   object-fit: cover;
@@ -71,7 +71,7 @@ header{
   z-index: 1;
 }
 
-/* ヘッダー背景画像の設定 *//*
+/* ヘッダー背景画像の設定 */
 @media  (prefers-color-scheme: dark)  {
   .head img{
     background-color: #FFFFFF;
@@ -86,7 +86,7 @@ header{
     z-index: 1;
   }
 }
-*/
+
 
 /* ヘッダーテキストの設定 */
 .text{
